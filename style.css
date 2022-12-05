@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  min-width: 100vw;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 15rem;
+  padding: 2rem;
+}
+
+.card img {
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 400;
+  margin: 0 0.3rem 5rem 0;
+  line-height: 1.3rem;
+}
+
+.card a {
+  width: fit-content;
+  padding: 0.6rem 1.3rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.7rem;
+}
+
+#orangeCard {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#blueCard {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#greenCard {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#orangeLink {
+  color: hsl(31, 77%, 52%);
+}
+#blueLink {
+  color: hsl(184, 100%, 22%);
+}
+#greenLink {
+  color: hsl(179, 100%, 13%);
+}
+
+#orangeLink:hover,
+#blueLink:hover,
+#greenLink:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: unset;
+  color: hsl(0, 0%, 95%);
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.5rem;
+  text-align: center;
+  color: rgb(180, 179, 179);
+  height: 3rem;
+}
+footer a {
+  color: rgb(159, 209, 212);
+}
+
+@media (min-width: 700px) {
+  main {
+    max-width: 50rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+/* How to fix the border radius when the cards are colom direction ?*\
