@@ -1,12 +1,18 @@
 * {
+  font-size: 15px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
 }
 
 body {
   min-height: 100vh;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--veryLightGray);
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +27,7 @@ main {
 }
 
 .card {
-  width: 15rem;
+  width: 230px;
   padding: 2rem;
 }
 
@@ -32,7 +38,7 @@ main {
 
 .card h1 {
   text-transform: uppercase;
-  color: hsl(0, 0%, 95%);
+  color: var(--veryLightGray);
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 1.9rem;
@@ -40,7 +46,7 @@ main {
 }
 
 .card p {
-  color: hsla(0, 0%, 100%, 0.7);
+  color: var(--transparentWhite);
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.76rem;
   font-weight: 400;
@@ -52,61 +58,62 @@ main {
   width: fit-content;
   padding: 0.6rem 1.3rem;
   border-radius: 1rem;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--veryLightGray);
   text-decoration: none;
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.7rem;
 }
 
 #orangeCard {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--brightOrange);
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
 #blueCard {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--darkCyan);
 }
 
 #greenCard {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--veryDarkCyan);
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
 #orangeLink {
-  color: hsl(31, 77%, 52%);
+  color: var(--brightOrange);
 }
 #blueLink {
-  color: hsl(184, 100%, 22%);
+  color: var(--darkCyan);
 }
 #greenLink {
-  color: hsl(179, 100%, 13%);
+  color: var(--veryDarkCyan);
 }
 
 #orangeLink:hover,
 #blueLink:hover,
 #greenLink:hover {
-  border: 2px solid hsl(0, 0%, 95%);
+  border: 2px solid var(--veryLightGray);
   background-color: unset;
-  color: hsl(0, 0%, 95%);
+  color: var(--veryLightGray);
 }
 
 footer {
   margin-top: 2rem;
-  font-size: 0.5rem;
+  font-size: 1rem;
   text-align: center;
   color: rgb(180, 179, 179);
-  height: 3rem;
+  height: 30px;
 }
 footer a {
-  color: rgb(159, 209, 212);
+  color: var(--darkCyan);
+  font-size: 1rem;
 }
 
 @media (min-width: 700px) {
   main {
-    max-width: 50rem;
+    max-width: 400px;
     flex-wrap: wrap;
     flex-direction: row;
   }
 }
 
-/* How to fix the border radius when the cards are colom direction ?*\
+/* How to fix the border radius when the cards are seted colom direction for mobile display ?*\
