@@ -21,7 +21,8 @@ main {
   min-width: 100vw;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -108,12 +109,6 @@ footer a {
   font-size: 1rem;
 }
 
-@media (min-width: 700px) {
-  main {
-    max-width: 400px;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
 
-/* How to fix the border radius when the cards are seted colom direction for mobile display ?*\
+
+/* How can I set different borders radius when the cards are wrapped so it can look like the mobile-design ? Should I use @media ? How ? *\
