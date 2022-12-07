@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/desktopScreenshot.png)
-![](./images/mobileScreenshot2.png)
+![](./images/mobileScreenshot3.jpg)
 
 ### Links
 
@@ -52,6 +52,20 @@ CSS custom properties on the :root pseudo-class to reduce the need for repetitio
   --veryDarkCyan: hsl(179, 100%, 13%);
   --transparentWhite: hsla(0, 0%, 100%, 0.75);
   --veryLightGray: hsl(0, 0%, 95%);
+}
+```
+
+Media queries to change the border radius of the cards for mobile display.
+
+```css
+@media screen and (max-width: 700px) {
+  #orangeCard {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  #greenCard {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
 }
 ```
 
