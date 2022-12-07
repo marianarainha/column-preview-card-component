@@ -99,6 +99,17 @@ main {
   color: var(--veryLightGray);
 }
 
+@media  screen and (max-width: 700px){
+  #orangeCard {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  #greenCard {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  
+}
+
 footer {
   margin-top: 2rem;
   font-size: 1rem;
