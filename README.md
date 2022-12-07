@@ -11,7 +11,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -67,11 +66,6 @@ Media queries to change the border radius of the cards for mobile display.
   }
 }
 ```
-
-### Continued development
-
-I couldn't figure it out how to set different borders radius to the cards when they'are wrapped so it can look like the mobile-design.
-Should I use @media ? How ?
 
 ## Author
 
