@@ -39,7 +39,7 @@ main {
   margin-bottom: 2rem;
 }
 
-.card h1 {
+.card h2 {
   text-transform: uppercase;
   color: var(--veryLightGray);
   font-family: "Big Shoulders Display", cursive;
